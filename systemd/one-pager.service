@@ -1,0 +1,11 @@
+[Unit]
+Description=One pager service to control the display
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/one-pager-server
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
